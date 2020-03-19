@@ -366,5 +366,14 @@
       </style>
   ```
 
+- #### 私有浏览器的前缀
+
+  ```html
+  -moz- :firefox浏览器前缀
+  -ms- :IE浏览器前缀
+  -webkit- :safair、chrome浏览器前缀
+  -0- ：Opera浏览器前缀
+  ```
+
   
 
