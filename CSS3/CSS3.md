@@ -328,4 +328,43 @@
   </body>
   ```
 
+- #### 动画
+
+  ```css
+  <style>	
+  				/*move 动画的名称*/
+          @keyframes move {
+            /* 0%---from */
+              0% {
+                  transform: translateX(0);
+              }
+            /* 100%--to */
+              100% {
+                  transform: translateX(1000px);
+              }
+          }
   
+          div {
+              width: 200px;
+              height: 200px;
+              background-color: hotpink;
+              /* 动画的名称 */
+              animation-name: move;
+              /* 动画持续的时间 */
+              animation-duration: 5s;
+              /* 运动曲线 */
+              animation-timing-function: ease;
+              /* 何时开始 */
+              animation-delay: 1s;
+              /*  重复次数-iteration 次数-count 无限循环-infinite */
+              animation-iteration-count: infinite;
+              /* 是否反方向播放 默认：Nomal*/
+              animation-direction: alternate;
+              /* 动画结束后的状态 */
+              animation-fill-mode: backwards;
+          }
+      </style>
+  ```
+
+  
+
