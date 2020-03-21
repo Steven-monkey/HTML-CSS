@@ -1,0 +1,112 @@
+body{
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    color: #000000;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #222222;
+}
+div{
+    box-sizing: border-box;
+}
+/* 顶部搜索框 */
+.search-index{
+    display: flex;
+    position: fixed;
+    max-width: 540px;
+    min-width: 320px;
+    width: 100%;
+    height: 44px;
+}
+.search{
+    position: relative;
+    flex: 1;
+    height: 26px;
+    border: 1px solid #cccccc;
+    margin: 7px 10px;
+    border-radius: 5px;
+    line-height: 24px;
+    padding-left: 35px;
+    /* 第一个值：水平阴影；第二个值：垂直阴影；第三个值：阴影的面积大小  a代表：阴影的深浅度*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+.search::before{
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    display: block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: url(../images/sprite.png) no-repeat -59px -279px;
+    background-size: 104px auto;
+}
+.user{
+    width: 44px;
+    height: 44px;
+    font-size: 12px;
+    text-align: center;
+    color: #2eaae0;
+}
+.user::before{
+    content: '';
+    display: block;
+    width: 23px;
+    height: 23px;
+    /* 精灵图位置的X Y 都是负值 */
+    background: url(../images/sprite.png) no-repeat -59px -194px;
+    /* 二倍精灵图，缩放精灵图 */
+    background-size: 104px auto;
+    margin: 4px auto 0;
+}
+.foucs{
+    padding-top: 44px;
+}
+.foucs img{
+    width:100%;
+}
+.local-nav{
+    height: 64px;
+    background-color: #ffff;
+    border-radius: 5px;
+    display: flex;
+    margin: 3px 4px;
+}
+.local-nav li{
+    flex: 1;
+}
+.local-nav li a{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 5px;
+}
+.local-nav li [class^="local-nav-icon"]{
+    width: 32px;
+    height: 32px;
+    background: url(../images/localnav_bg.png) no-repeat 0 0;
+    background-size: 32px auto;
+}
+.local-nav li .local-nav-icon-icon2{
+    background-position: 0 -32px;
+}
+.local-nav li .local-nav-icon-icon3{
+    background-position: 0 -64px;
+}
+.local-nav li .local-nav-icon-icon4{
+    background-position: 0 -96px;
+}
+.local-nav li .local-nav-icon-icon5{
+    background-position: 0 -128px;
+}
