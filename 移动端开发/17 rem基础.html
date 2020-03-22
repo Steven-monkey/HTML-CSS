@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 14px;
+        }
+
+        div {
+            font-size: 12px;
+        }
+
+        p {
+            /* em相对于父级元素字体大小来说的 父元素字体大小为12px，则子元素的10em表示：父级元素字体大小✖️10 */
+            /* width: 10em;
+            height: 10em; */
+            /*rem（root-em）相对于根元素（html）字体大小来说的 父元素字体大小为14px，则子元素的10em表示：父级元素字体大小✖️10*/
+            width: 10rem;
+            height: 10rem;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p></p>
+    </div>
+</body>
+
+</html>
