@@ -110,3 +110,124 @@ div{
 .local-nav li .local-nav-icon-icon5{
     background-position: 0 -128px;
 }
+.nav{
+    margin: 0 4px 3px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.nva-common{
+    display: flex;
+    height: 88px;
+}
+.nva-common:nth-child(2){
+    margin: 3px 0;
+}
+.nav-items{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.nav-items:nth-child(1){
+    background: url(../images/hotel.png)no-repeat center bottom;
+    background-size: 121px auto;
+}
+.nav-items a{
+    flex: 1;
+    text-align: center;
+    line-height: 44px;
+    border-bottom: 1px solid #ffff;
+}
+/* 第一列里面的a */
+.nav-items:nth-child(1) a{
+    border: 0;
+}
+.nav-items:nth-child(-n+2){
+    border-right: 1px solid #ffff;
+}
+.nva-common:nth-child(1){
+    background: -webkit-linear-gradient(left,#fa5a55,#fa994d);
+}
+.nva-common:nth-child(2){
+    background: -webkit-linear-gradient(left,#4b90ed,#53bced);
+}
+.nva-common:nth-child(3){
+    background: -webkit-linear-gradient(left,#34c2a9,#6cd559);
+}
+.subnav-entry{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    margin: 0 4px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+}
+.subnav-entry li{
+    /* 子盒子平均分配是可以写百分比的 */
+    flex: 20%;
+}
+.subnav-entry a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4px;
+}
+.subnav-entry-icon{
+    width: 28px;
+    height: 28px;
+    background-color: pink;
+    background: url(../images/subnav-bg.png) no-repeat;
+    background-size: 28px auto;
+}
+.sales-box{
+    border-radius: 1px solid #bbbbbb;
+    background-color: #ffff;
+    margin: 4px;
+}
+.sales-hd{
+    position: relative;
+    height: 44px;
+    border-bottom: 1px solid #cccccc;
+}
+.sales-hd h2{
+    position: relative;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.sales-hd h2::after{
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    width: 79px;
+    height: 15px;
+    content: '';
+    background: url(../images/hot.png) no-repeat 0 -20px;
+    background-size: 79px auto;
+}
+.more{
+    position: absolute;
+    top: 4px;
+    right: 0;
+    border-radius: 15px;
+    background:-webkit-linear-gradient(left,#ff506c,#ff6bc6);
+    padding: 3px 20px 3px 10px;
+}
+.more::after{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 7px;
+    height: 7px;
+    content: '';
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    transform: rotate(45deg);
+    font-weight: 400;
+}
+.row{
+    display: flex;
+}
+.row a{
+    flex: 1;
+}
+.row a img{
+    width: 100%;
+}

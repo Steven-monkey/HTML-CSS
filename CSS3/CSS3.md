@@ -382,8 +382,20 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
   ```
 
+- #### 背景颜色渐变
+
+  ```css
+  /*加各个浏览器的前缀、可是各个方位的渐变*/
+  background: -webkit-linear-gradient(left, red, blue);
+  background: -webkit-linear-gradient(left top, red, blue);
+  background: -webkit-linear-gradient(right top, red, blue);
+  ```
+
+  
+
 - #### CSS中的细节问题
 
   - ##### ul有自己的margin和padding值（当使用时，要去除margin和padding值）
 
   - 
+
