@@ -1,0 +1,12 @@
+.header {
+  width: 500px;
+  height: 200px;
+  background-color: pink;
+}
+.header .logo {
+  font-size: 15px;
+  color: #ffff;
+}
+.header .logo:hover {
+  color: green;
+}
